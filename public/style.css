@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --header-bg-color: #d4d4d8;
+  --sidebar-bg-color: #fb923c;
+  --projects-bg-color: #a1a1aa;
+  font-family: "Oswald", sans-serif;
+}
+
+html,
+body {
+  margin: 0%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0%;
+  padding: 0%;
+}
+
+ul {
+  padding: 10px;
+}
+ul > li {
+  list-style: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 4fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  background-color: var(--header-bg-color);
+  grid-column: 2/3;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 0.5fr 2fr 5fr;
+  background-color: var(--sidebar-bg-color);
+  grid-row: 1/3;
+}
+
+.sidebar-header {
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 25px;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+}
+
+.sidebar div {
+  color: white;
+  justify-content: left;
+  text-align: left;
+  align-items: left;
+}
+
+.sidebar ul > li {
+  padding: 15px 0;
+  padding-left: 15px;
+  font-size: 18px;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  justify-content: start;
+  align-items: center;
+}
+
+.sidebar ul > li:hover,
+:focus {
+  color: #fb923c;
+}
+
+.icon-header {
+  width: 48px;
+  height: 48px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.projects {
+  background-color: var(--projects-bg-color);
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 0.5fr;
+}
+
+.content-project1 {
+  display: grid;
+  grid-template-rows: 0.2fr repeat(3, 2fr) 0.2fr;
+  padding: 15px;
+  gap: 25px;
+}
+
+.content-project2 {
+}
+
+.content-project3 {
+}
+
+.content-card {
+  background-color: #d4d4d8;
+  border-radius: 25px;
+}
