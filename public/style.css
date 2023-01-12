@@ -98,24 +98,46 @@ ul > li {
   grid-template-rows: 0.15fr 2fr 0.15fr;
 }
 
-.content-project1 {
+.header-project {
   display: grid;
-  grid-template-columns: repeat(2, 1fr) 0.5fr;
+  grid-template-columns: 2fr 0.5fr;
   padding: 10px;
 }
 
+.header-align {
+  text-align: left;
+  justify-content: start;
+  padding-top: 10px;
+}
+
+.header-pd {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.content-project1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 0.5fr;
+  padding-left: 10px;
+  padding-right: 10px;
+  gap: 10px;
+}
+
 .content-project2 {
+  display: grid;
+  grid-template-rows: 1fr 0.2fr 1fr;
+  padding: 10px;
 }
 
 .content {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  gap: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  gap: 25px;
+  padding: 10px;
 }
 .content-card {
-  border: 1px solid black;
   background-color: #ebebf5;
-  border-radius: 15px;
+  border-left: 10px solid orange;
+  border-radius: 10px;
+  display: grid;
 }
