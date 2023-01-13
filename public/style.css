@@ -153,15 +153,17 @@ ul > li {
   border-left: 10px solid orange;
   border-radius: 10px;
   padding: 15px;
+  position: relative;
 }
 
 .link-icon {
   display: inline-block;
   justify-content: start;
   text-align: right;
-  position: relative;
-  top: 25%;
-  left: 70%;
+  align-items: right;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
 .link-icon-pd {
