@@ -48,8 +48,59 @@ ul > li {
 }
 
 .header {
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
   background-color: var(--header-bg-color);
   grid-column: 2/3;
+}
+
+.header-top {
+  display: flex;
+  position: relative;
+}
+
+.header-bottom {
+}
+
+.search-bar {
+  background-color: red;
+  width: 700px;
+  height: 25px;
+  vertical-align: center;
+  position: absolute;
+  bottom: 12.5px;
+  left: 75px;
+}
+
+.search-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: 12px;
+  left: 40px;
+}
+
+.bell-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: 12px;
+  right: 250px;
+}
+
+.profile-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: 12px;
+  right: 200px;
+}
+
+.profile-name {
+  display: flex;
+  position: absolute;
+  bottom: 12px;
+  right: 80px;
 }
 
 .sidebar {
