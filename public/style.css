@@ -11,6 +11,8 @@
 html,
 body {
   margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
 }
 
 h1,
@@ -49,6 +51,8 @@ ul > li {
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 6fr;
+  width: fit-content;
+  height: fit-content;
   width: 100vw;
   height: 100vh;
 }
@@ -363,9 +367,9 @@ ul > li {
   grid-auto-flow: column;
 }
 
-/* @media only screen and (max-width: 1920px) {
+/* @media only screen and (min-width: 1920px) {
   .container {
-    height: 900px;
-    width: 1600px;
+    height: 50%;
+    width: 50%;
   }
 } */
