@@ -2,8 +2,9 @@
 
 :root {
   --header-bg-color: #d4d4d8;
-  --sidebar-bg-color: #fb923c;
+  --sidebar-bg-color: #292524;
   --projects-bg-color: #a1a1aa;
+  --background-image: linear-gradient(#52525b, #7f1d1d);
   font-family: "Oswald", sans-serif;
 }
 
@@ -81,6 +82,9 @@ ul > li {
   height: 32px;
   border-radius: 25px;
   margin-left: 10px;
+  background-color: #a1a1aa;
+  -webkit-transition: all 0.3s ease-out !important;
+  transition: all 0.3s ease-out !important;
 }
 
 .button button:focus {
@@ -89,8 +93,8 @@ ul > li {
 }
 
 .button button:hover {
-  background-color: #fb923c;
-  color: black;
+  background-color: #7f1d1d;
+  color: white;
 }
 
 .search-bar {
@@ -102,11 +106,14 @@ ul > li {
   position: absolute;
   bottom: 12.5px;
   left: 75px;
+  -webkit-transition: all 0.3s ease-out !important;
+  transition: all 0.3s ease-out !important;
 }
 
 .search-bar:hover {
   border: 1px solid #fb923c;
-  background-color: blue;
+  background-color: #4e4e50;
+  color: white;
 }
 
 .search-bar p {
@@ -205,11 +212,13 @@ ul > li {
   gap: 20px;
   justify-content: start;
   align-items: center;
+  -webkit-transition: all 0.3s ease-out !important;
+  transition: all 0.3s ease-out !important;
 }
 
 .sidebar ul > li:hover,
 :focus {
-  color: black;
+  color: #dc2626;
 }
 
 .icon-header {
@@ -223,7 +232,7 @@ ul > li {
 }
 
 .projects {
-  background-color: var(--projects-bg-color);
+  background-image: var(--background-image);
   grid-column: 2/3;
   display: grid;
   grid-template-rows: 0.15fr 2fr 0.15fr;
@@ -236,12 +245,14 @@ ul > li {
 }
 
 .header-align {
+  color: #d4d4d8;
   text-align: left;
   justify-content: start;
   padding-top: 10px;
 }
 
 .header-pd {
+  color: #d4d4d8;
   padding-left: 10px;
   padding-top: 10px;
 }
@@ -268,10 +279,18 @@ ul > li {
 }
 .content-card {
   background-color: #ebebf5;
-  border-left: 10px solid orange;
+  border-left: 10px solid #7f1d1d;
   border-radius: 10px;
   padding: 15px;
   position: relative;
+  -webkit-transition: all 0.3s ease-out !important;
+  transition: all 0.3s ease-out !important;
+}
+
+.content-card:hover {
+  background-color: #6f2232;
+  border-left: 10px solid black;
+  color: white;
 }
 
 .link-icon {
